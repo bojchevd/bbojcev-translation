@@ -12,10 +12,12 @@ export function QuoteCalculator() {
 
   const [documentId, setDocumentId] = useState("");
   const [languagePair, setLanguagePair] = useState("");
-  const [pages, setPages] = useState(1);
+  const [quantity, setQuantity] = useState(1);
   const [express, setExpress] = useState(false);
 
-  const result = documentId ? calculatePrice(documentId, pages, express) : null;
+  const selectedDoc = documentTypes.find((d) => d.id === documentId);
+  const isPerWord = selectedDoc?.tier === "per-word";
+  const result = documentId ? calculatePrice(documentId, quantity, express) : null;
 
   return (
     <div id="calculator" className="bg-white rounded-lg p-6 sm:p-8 shadow-sm border border-linen">
@@ -30,7 +32,7 @@ export function QuoteCalculator() {
           </label>
           <select
             value={documentId}
-            onChange={(e) => setDocumentId(e.target.value)}
+            onChange={(e) => { setDocumentId(e.target.value); setQuantity(1); setExpress(false); }}
             className="w-full border border-linen rounded-sm px-3 py-2.5 text-sm text-brown bg-cream focus:outline-none focus:border-terracotta"
           >
             <option value="">{t("selectDocument")}</option>
@@ -61,31 +63,33 @@ export function QuoteCalculator() {
           </select>
         </div>
 
-        {/* Pages */}
+        {/* Quantity — pages or words */}
         <div>
           <label className="block text-sm font-medium text-brown mb-1.5">
-            {t("pages")}
+            {isPerWord ? t("words") : t("pages")}
           </label>
           <input
             type="number"
             min={1}
-            max={999}
-            value={pages}
-            onChange={(e) => setPages(Math.max(1, parseInt(e.target.value) || 1))}
+            max={isPerWord ? 999999 : 999}
+            value={quantity}
+            onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
             className="w-full border border-linen rounded-sm px-3 py-2.5 text-sm text-brown bg-cream focus:outline-none focus:border-terracotta"
           />
         </div>
 
-        {/* Express toggle */}
-        <label className="flex items-center gap-3 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={express}
-            onChange={(e) => setExpress(e.target.checked)}
-            className="w-4 h-4 accent-terracotta"
-          />
-          <span className="text-sm text-muted">{t("expressLabel")}</span>
-        </label>
+        {/* Express toggle — only for page-based pricing */}
+        {!isPerWord && (
+          <label className="flex items-center gap-3 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={express}
+              onChange={(e) => setExpress(e.target.checked)}
+              className="w-4 h-4 accent-terracotta"
+            />
+            <span className="text-sm text-muted">{t("expressLabel")}</span>
+          </label>
+        )}
 
         {/* Result */}
         {result && (
@@ -95,7 +99,7 @@ export function QuoteCalculator() {
               {result.total.toLocaleString()} <span className="text-lg">MKD</span>
             </p>
             <p className="text-sm text-muted mt-1">
-              {result.perPage} MKD {t("perPage")} × {pages}
+              {result.unitPrice} MKD {isPerWord ? t("perWord") : t("perPage")} × {quantity.toLocaleString()}
             </p>
             <p className="text-xs text-muted mt-4 italic">{t("disclaimer")}</p>
             <div className="flex flex-wrap gap-3 mt-4">

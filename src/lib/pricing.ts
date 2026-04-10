@@ -1,4 +1,4 @@
-export type PricingTier = "standard" | "complex";
+export type PricingTier = "standard" | "complex" | "per-word";
 
 export type DocumentType = {
   id: string;
@@ -24,6 +24,7 @@ export const documentTypes: DocumentType[] = [
   { id: "authorization", mk: "Полномошно", en: "Power of attorney / Authorization", tier: "complex" },
   { id: "court-decision", mk: "Судска одлука", en: "Court decision / Verdict", tier: "complex" },
   { id: "contract", mk: "Договор", en: "Contract / Agreement", tier: "complex" },
+  { id: "technical-docs", mk: "Техничка документација", en: "Technical documentation", tier: "per-word" },
   { id: "other", mk: "Друг документ", en: "Other document", tier: "standard" },
 ];
 
@@ -31,17 +32,25 @@ export const PRICES = {
   standard: 400,
   complex: 500,
   expressSurcharge: 100,
+  perWord: 3,
 } as const;
 
 export function calculatePrice(
   documentId: string,
-  pages: number,
+  quantity: number,
   express: boolean,
-): { total: number; perPage: number; tier: PricingTier } {
+): { total: number; unitPrice: number; tier: PricingTier } {
   const doc = documentTypes.find((d) => d.id === documentId);
   const tier = doc?.tier ?? "standard";
+
+  if (tier === "per-word") {
+    const unitPrice = PRICES.perWord;
+    const total = unitPrice * quantity;
+    return { total, unitPrice, tier };
+  }
+
   const basePrice = PRICES[tier];
-  const perPage = express ? basePrice + PRICES.expressSurcharge : basePrice;
-  const total = perPage * pages;
-  return { total, perPage, tier };
+  const unitPrice = express ? basePrice + PRICES.expressSurcharge : basePrice;
+  const total = unitPrice * quantity;
+  return { total, unitPrice, tier };
 }

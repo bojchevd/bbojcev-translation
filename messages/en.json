@@ -201,10 +201,12 @@
     "languagePair": "Language Pair",
     "selectLanguage": "Select language pair",
     "pages": "Number of Pages",
+    "words": "Number of Words",
     "express": "Express Delivery",
     "expressLabel": "I need express delivery (+100 MKD/page)",
     "result": "Estimated Price",
     "perPage": "per page",
+    "perWord": "per word",
     "disclaimer": "This is an informational estimate. For an exact quote, please contact us or submit your document.",
     "requestQuote": "Request Exact Quote",
     "contactWhatsApp": "Contact via WhatsApp"

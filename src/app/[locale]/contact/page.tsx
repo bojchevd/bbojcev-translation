@@ -39,12 +39,15 @@ export default async function ContactPage({
 
       <section className="py-16">
         <Container>
+          <ContactInfo />
+        </Container>
+      </section>
+
+      <section className="bg-linen py-16">
+        <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <QuoteForm />
-            <div className="space-y-8">
-              <QuoteCalculator />
-              <ContactInfo />
-            </div>
+            <QuoteCalculator />
           </div>
         </Container>
       </section>
