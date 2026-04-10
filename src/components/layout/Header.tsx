@@ -20,7 +20,7 @@ export function Header() {
           href={`/${locale}`}
           className="font-serif text-xl sm:text-2xl text-brown tracking-wide"
         >
-          Biljana V. Bojcev
+          Biljana V. Bojchev
         </Link>
 
         {/* Desktop nav */}

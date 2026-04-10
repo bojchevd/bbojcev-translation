@@ -15,7 +15,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <p className="font-serif text-xl text-cream mb-3">
-              Biljana V. Bojcev
+              Biljana V. Bojchev
             </p>
             <p className="text-sm leading-relaxed">{t("hero.title")}</p>
             <p className="text-sm mt-1">{t("footer.location")}</p>

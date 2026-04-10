@@ -17,7 +17,7 @@ export function buildMetadata({
   const otherLocale = locale === "mk" ? "en" : "mk";
   const url = `${BASE_URL}/${locale}${path}`;
   const altUrl = `${BASE_URL}/${otherLocale}${path}`;
-  const fullTitle = `${title} | Biljana V. Bojcev`;
+  const fullTitle = `${title} | Biljana V. Bojchev`;
 
   return {
     title: fullTitle,
@@ -33,7 +33,7 @@ export function buildMetadata({
       title: fullTitle,
       description,
       url,
-      siteName: "Biljana V. Bojcev — Certified Court Translator",
+      siteName: "Biljana V. Bojchev — Certified Court Translator",
       locale: locale === "mk" ? "mk_MK" : "en_US",
       type: "website",
     },
@@ -45,8 +45,8 @@ export function localBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": BASE_URL,
-    name: "Biljana Vasileva Bojcev — Certified Court Translator",
-    alternateName: "Биљана Василева Бојчев — Овластен судски преведувач",
+    name: "Biljana Vasileva Bojchev — Certified Court Translator",
+    alternateName: "Билјана Василева Бојчев — Овластен судски преведувач",
     description:
       "Certified court translator with 30+ years of experience. Document translation, subtitling, legal translation. Veles, North Macedonia.",
     url: BASE_URL,
@@ -115,7 +115,7 @@ export function personJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Biljana Vasileva Bojcev",
+    name: "Biljana Vasileva Bojchev",
     jobTitle: "Certified Court Translator",
     url: BASE_URL,
     knowsLanguage: [
