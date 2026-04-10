@@ -10,8 +10,6 @@ export const LANGUAGE_PAIRS = [
   { from: "mk", to: "en", label: { mk: "Македонски → Англиски", en: "Macedonian → English" } },
   { from: "sr", to: "mk", label: { mk: "Српски → Македонски", en: "Serbian → Macedonian" } },
   { from: "mk", to: "sr", label: { mk: "Македонски → Српски", en: "Macedonian → Serbian" } },
-  { from: "hr", to: "mk", label: { mk: "Хрватски → Македонски", en: "Croatian → Macedonian" } },
-  { from: "bs", to: "mk", label: { mk: "Босански → Македонски", en: "Bosnian → Macedonian" } },
 ] as const;
 
 export const NAV_LINKS = [

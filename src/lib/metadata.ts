@@ -58,7 +58,7 @@ export function localBusinessJsonLd() {
       addressCountry: "MK",
     },
     priceRange: "$$",
-    knowsLanguage: ["mk", "en", "sr", "hr", "bs"],
+    knowsLanguage: ["mk", "en", "sr"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Translation Services",
@@ -122,8 +122,6 @@ export function personJsonLd() {
       { "@type": "Language", name: "Macedonian", alternateName: "mk" },
       { "@type": "Language", name: "English", alternateName: "en" },
       { "@type": "Language", name: "Serbian", alternateName: "sr" },
-      { "@type": "Language", name: "Croatian", alternateName: "hr" },
-      { "@type": "Language", name: "Bosnian", alternateName: "bs" },
     ],
     alumniOf: {
       "@type": "CollegeOrUniversity",

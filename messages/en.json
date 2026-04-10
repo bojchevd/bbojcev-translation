@@ -20,7 +20,7 @@
   },
   "trustBar": {
     "years": "30+ Years Experience",
-    "languages": "5 Languages",
+    "languages": "3 Languages",
     "certified": "Court Certified",
     "projects": "1000+ Projects"
   },
@@ -41,7 +41,7 @@
   "about": {
     "pageTitle": "About Biljana Vasileva Bojchev",
     "bioTitle": "Professional Background",
-    "bio": "Biljana Vasileva Bojchev is a certified court translator with over 30 years of professional experience in translation, localization, and subtitling. Based in Veles, North Macedonia, she holds a BA in English Language and Literature from the Faculty of Philology at Ss. Cyril and Methodius University in Skopje.\n\nSince 1996, Biljana has been authorized as a sworn court translator for English by the Ministry of Justice. In 2010, she received additional authorization for Serbian. She translates across five languages: Macedonian, English, Serbian, Croatian, and Bosnian.\n\nHer career spans diverse fields — from translating EU legislation for the Sector of European Integration of the Government of North Macedonia, to subtitling films, series, and documentaries for Disney, Netflix, National Geographic, AXN, Viasat, and TV1000.\n\nIn 2007, she founded TRANSLATUM, a translation company based in Štip, where she managed projects, coordinated with international clients, and expanded into localization and subtitling services. Today she continues as an independent freelance translator, combining decades of expertise with modern CAT tools and MT post-editing workflows.",
+    "bio": "Biljana Vasileva Bojchev is a certified court translator with over 30 years of professional experience in translation, localization, and subtitling. Based in Veles, North Macedonia, she holds a BA in English Language and Literature from the Faculty of Philology at Ss. Cyril and Methodius University in Skopje.\n\nSince 1996, Biljana has been authorized as a sworn court translator for English by the Ministry of Justice. In 2010, she received additional authorization for Serbian. She translates across three languages: Macedonian, English, and Serbian.\n\nHer career spans diverse fields — from translating EU legislation for the Sector of European Integration of the Government of North Macedonia, to subtitling films, series, and documentaries for Disney, Netflix, National Geographic, AXN, Viasat, and TV1000.\n\nIn 2007, she founded TRANSLATUM, a translation company based in Štip, where she managed projects, coordinated with international clients, and expanded into localization and subtitling services. Today she continues as an independent freelance translator, combining decades of expertise with modern CAT tools and MT post-editing workflows.",
     "timelineTitle": "Career Milestones",
     "skillsTitle": "Skills & Qualifications",
     "languagesTitle": "Languages",
@@ -96,7 +96,7 @@
         },
         {
           "q": "What languages do you translate to and from?",
-          "a": "I am authorized for English ↔ Macedonian and Serbian ↔ Macedonian. I also translate from Croatian and Bosnian to Macedonian."
+          "a": "I am authorized for English ↔ Macedonian and Serbian ↔ Macedonian."
         },
         {
           "q": "How is the price calculated?",

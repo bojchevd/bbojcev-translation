@@ -6,7 +6,9 @@
       "Bash(git add:*)",
       "Bash(git rm:*)",
       "Bash(git commit -m ':*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('messages/mk.json','utf8'\\)\\); console.log\\('mk.json: valid'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('messages/en.json','utf8'\\)\\); console.log\\('en.json: valid'\\)\")"
     ]
   }
 }

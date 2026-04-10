@@ -6,13 +6,12 @@ const languages = [
   { en: "Macedonian", mk: "Македонски", enLevel: "Native", mkLevel: "Мајчин" },
   { en: "English", mk: "Англиски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
   { en: "Serbian", mk: "Српски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
-  { en: "Croatian", mk: "Хрватски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
-  { en: "Bosnian", mk: "Босански", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
 ];
 
 const catTools = [
-  "SDL Trados Studio 11", "Trados 7 Freelance", "Idiom Workbench",
+  "SDL Trados Studio", "Idiom Workbench",
   "Wordfast", "Smartling", "MemoQ",
+  "Client-specific tools",
 ];
 
 const certifications = [
