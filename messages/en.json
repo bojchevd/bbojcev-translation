@@ -38,32 +38,159 @@
     "ctaSubtitle": "Get a free quote for your document translation project",
     "ctaButton": "Request Quote"
   },
+  "about": {
+    "pageTitle": "About Biljana Vasileva Bojcev",
+    "bioTitle": "Professional Background",
+    "bio": "Biljana Vasileva Bojcev is a certified court translator with over 30 years of professional experience in translation, localization, and subtitling. Based in Veles, North Macedonia, she holds a BA in English Language and Literature from the Faculty of Philology at Ss. Cyril and Methodius University in Skopje.\n\nSince 1996, Biljana has been authorized as a sworn court translator for English by the Ministry of Justice. In 2010, she received additional authorization for Serbian. She translates across five languages: Macedonian, English, Serbian, Croatian, and Bosnian.\n\nHer career spans diverse fields — from translating EU legislation for the Sector of European Integration of the Government of North Macedonia, to subtitling films, series, and documentaries for Disney, Netflix, National Geographic, AXN, Viasat, and TV1000.\n\nIn 2007, she founded TRANSLATUM, a translation company based in Štip, where she managed projects, coordinated with international clients, and expanded into localization and subtitling services. Today she continues as an independent freelance translator, combining decades of expertise with modern CAT tools and MT post-editing workflows.",
+    "timelineTitle": "Career Milestones",
+    "skillsTitle": "Skills & Qualifications",
+    "languagesTitle": "Languages",
+    "toolsTitle": "CAT Tools",
+    "certificationsTitle": "Certifications"
+  },
+  "portfolio": {
+    "pageTitle": "Portfolio",
+    "pageSubtitle": "A selection of projects and collaborations spanning three decades of professional translation work",
+    "subtitlingTitle": "Subtitling & Audiovisual Work",
+    "subtitlingDescription": "Professional subtitling for film, series, documentaries, and interviews. Collaborating with major studios and broadcasting channels to deliver accurate, natural-sounding Macedonian subtitles.",
+    "euTitle": "EU & Government Translation",
+    "euDescription": "Translation of EU regulations, directives, and legislative documents for the Sector of European Integration of the Government of North Macedonia. Areas covered include transport, agriculture, internal affairs, finance, and customs.",
+    "industriesTitle": "Industries & Specializations",
+    "teachingTitle": "Teaching & Academic Work",
+    "teachingDescription": "Over 20 years of teaching English at primary and secondary levels, including multicultural classrooms. Author and co-author of papers presented at scientific conferences on pedagogy. Erasmus Plus participant."
+  },
   "services": {
     "pageTitle": "Our Services",
     "pageSubtitle": "Comprehensive translation services for every need",
     "court-translation": {
       "title": "Court Translation",
-      "short": "Certified sworn translations for all official documents with full legal validity."
+      "short": "Certified sworn translations for all official documents with full legal validity.",
+      "description": "As an authorized court translator appointed by the Ministry of Justice since 1996, I provide certified sworn translations of official documents that are legally valid for use in courts, government institutions, embassies, and other official bodies.\n\nEvery translated document receives an official seal and signature confirming its legal validity. Whether you need a birth certificate translated for a visa application or a court decision for legal proceedings abroad, your documents will be handled with the precision and confidentiality they require.\n\nI translate between Macedonian, English, and Serbian, covering all types of official documentation required by individuals and institutions.",
+      "documentsTitle": "Documents We Translate",
+      "documents": [
+        "Birth certificates",
+        "Marriage certificates",
+        "Divorce decrees",
+        "Death certificates",
+        "Diplomas and academic transcripts",
+        "School certificates and report cards",
+        "Criminal record certificates",
+        "Current account statements",
+        "Tax residency certificates",
+        "Passports and ID documents",
+        "Visa applications",
+        "Notarized documents and powers of attorney",
+        "Court decisions and rulings",
+        "Contracts and agreements",
+        "Medical records and certificates",
+        "Driver's licenses"
+      ],
+      "faq": [
+        {
+          "q": "How long does a certified translation take?",
+          "a": "Standard delivery is 1–2 business days for most documents. Express delivery is available for urgent requests at an additional fee."
+        },
+        {
+          "q": "Is a certified translation legally valid abroad?",
+          "a": "Yes. Certified translations bearing the court translator's seal and signature are recognized by courts, embassies, government institutions, and universities worldwide."
+        },
+        {
+          "q": "What languages do you translate to and from?",
+          "a": "I am authorized for English ↔ Macedonian and Serbian ↔ Macedonian. I also translate from Croatian and Bosnian to Macedonian."
+        },
+        {
+          "q": "How is the price calculated?",
+          "a": "Pricing is per page. Standard documents are 400 MKD per page. Complex documents (divorce decrees, notarial acts, powers of attorney) are 500 MKD per page. Express delivery adds 100 MKD per page."
+        },
+        {
+          "q": "Do I need to bring the original document?",
+          "a": "You can send a scanned copy or clear photo of the document by email. The original is only needed if you require the translation to be bound together with it."
+        }
+      ]
     },
     "legal-translation": {
       "title": "Legal & Business Translation",
-      "short": "Contracts, regulations, court decisions, business plans, and financial documents."
+      "short": "Contracts, regulations, court decisions, business plans, and financial documents.",
+      "description": "Legal translation demands absolute precision — a single mistranslated term can change the meaning of an entire clause. With decades of experience translating contracts, regulations, and court documents, I deliver legally accurate translations that preserve the intent and terminology of the original.\n\nMy legal translation work covers corporate law, regulatory compliance, court proceedings, and financial documentation. I have extensive experience translating EU directives and regulations for the Government of North Macedonia, giving me deep familiarity with both domestic and international legal terminology.\n\nAll legal translations are handled with strict confidentiality and professional care.",
+      "documentsTitle": "Document Types",
+      "documents": [
+        "Contracts and agreements",
+        "Court decisions and rulings",
+        "Laws and regulations",
+        "EU directives and regulations",
+        "Business plans and proposals",
+        "Financial reports and balance sheets",
+        "Corporate bylaws and statutes",
+        "Tender documentation",
+        "Powers of attorney",
+        "Notarial acts"
+      ],
+      "faq": [
+        {
+          "q": "Do you translate EU legislation?",
+          "a": "Yes. I have extensive experience translating EU directives, regulations, and decisions from English to Macedonian, including work for the Government's Sector of European Integration."
+        },
+        {
+          "q": "Can legal translations be certified?",
+          "a": "Yes. As a sworn court translator, I can provide certified translations of legal documents with official seal and signature."
+        },
+        {
+          "q": "How do you ensure accuracy in legal translation?",
+          "a": "I use specialized legal terminology databases, reference parallel texts in both legal systems, and draw on 30 years of practical experience with legal documents."
+        }
+      ]
     },
     "subtitling": {
       "title": "Subtitling & Audiovisual",
-      "short": "Professional subtitling for film, series, documentaries, and interviews."
+      "short": "Professional subtitling for film, series, documentaries, and interviews.",
+      "description": "Professional subtitling requires more than translation — it demands precise timing, cultural adaptation, and the ability to convey dialogue naturally within strict character and time constraints.\n\nWith years of experience subtitling for major studios and broadcasting channels, I deliver subtitles that feel native to Macedonian audiences while faithfully representing the original content. My work spans feature films, TV series, documentaries, interviews, and promotional content.\n\nI work with all standard subtitle formats and tools, ensuring compatibility with any broadcast or streaming platform.",
+      "clientsTitle": "Studios & Channels",
+      "clients": ["Disney", "Netflix", "National Geographic", "AXN", "Viasat", "TV1000"],
+      "contactNote": "Subtitling projects vary in scope and format. Contact me with details about your project for a custom quote."
     },
     "literary-translation": {
       "title": "Literary Translation",
-      "short": "Book translation across genres — health, science, history, and more."
+      "short": "Book translation across genres — health, science, history, and more.",
+      "description": "Literary translation is an art that goes beyond word-for-word conversion. It requires capturing the author's voice, style, and intent while making the text feel natural in the target language.\n\nI translate non-fiction books across a wide range of subjects including health and wellness, science, history, sports, chemistry, and yoga. Each project receives careful attention to terminology, readability, and the author's unique tone.\n\nWhether it's a health guide, a scientific text, or a historical account, I bring both linguistic expertise and subject matter research to every translation.",
+      "contactNote": "Literary translation projects require individual assessment. Contact me with details about the book, genre, and target language for a personalized quote."
     },
     "general-translation": {
       "title": "General Translation",
-      "short": "Medical, academic, technical, IT, and personal document translation."
+      "short": "Medical, academic, technical, IT, and personal document translation.",
+      "description": "Not every translation project fits neatly into one category. From medical research questionnaires and academic papers to IT documentation and personal correspondence, I provide accurate and fluent translations across a broad range of subjects.\n\nMy experience spans medical and pharmaceutical translations (including cognitive debriefing projects and patient interviews), academic research, technical manuals, software localization, telecommunications documentation, and more.\n\nEach project is approached with attention to subject-specific terminology and the intended audience.",
+      "documentsTitle": "Common Document Types",
+      "documents": [
+        "Medical reports and research questionnaires",
+        "Academic papers and theses",
+        "Technical manuals (tractors, household appliances, printers, cameras)",
+        "Software and IT documentation",
+        "Telecommunications tender documents",
+        "Personal letters and correspondence",
+        "Articles and web content",
+        "Surveys and questionnaires",
+        "Patent documentation",
+        "Certificates and diplomas"
+      ],
+      "faq": [
+        {
+          "q": "Do you handle medical translations?",
+          "a": "Yes. I have experience with medical and pharmaceutical translations, including research questionnaires, patient interviews, cognitive debriefing projects, and physician reports."
+        },
+        {
+          "q": "Can you translate technical manuals?",
+          "a": "Yes. I've translated technical documentation for various industries including household appliances, agricultural machinery, printers, and cameras."
+        },
+        {
+          "q": "What about IT and software localization?",
+          "a": "I work on software localization projects using industry-standard CAT tools, ensuring consistent terminology and natural user interface text."
+        }
+      ]
     },
     "mtpe": {
       "title": "MT Post-Editing",
-      "short": "Professional review and editing of machine-translated content for publication quality."
+      "short": "Professional review and editing of machine-translated content for publication quality.",
+      "description": "Machine translation has improved dramatically, but it still requires a human expert to catch nuances, fix errors, and ensure the text reads naturally. MT post-editing (MTPE) is a cost-effective way to leverage machine translation while maintaining professional quality.\n\nI provide both light and full post-editing services. Light post-editing ensures the text is understandable and factually correct. Full post-editing brings the text to publication quality — indistinguishable from a human translation.\n\nWith extensive experience in both traditional translation and MTPE workflows, I can efficiently identify and correct the typical errors that machine translation produces in Macedonian.",
+      "contactNote": "MTPE pricing depends on the source quality and desired output level. Contact me with a sample text for an accurate quote."
     }
   }
 }
