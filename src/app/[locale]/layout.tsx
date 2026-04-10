@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { localBusinessJsonLd, personJsonLd } from "@/lib/metadata";
 import "../globals.css";
 
 const playfair = Playfair_Display({
@@ -36,6 +37,16 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}
+        />
+      </head>
       <body className="bg-cream text-brown font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />

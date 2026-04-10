@@ -1,5 +1,5 @@
-import { setRequestLocale } from "next-intl/server";
-import { getTranslations } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { buildMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { LogoShowcase } from "@/components/portfolio/LogoShowcase";
@@ -8,7 +8,14 @@ import { ExperienceGrid } from "@/components/portfolio/ExperienceGrid";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "portfolio" });
-  return { title: t("pageTitle") };
+  return buildMetadata({
+    title: t("pageTitle"),
+    description: locale === "mk"
+      ? "Портфолио на проекти: титлување за Disney, Netflix, NatGeo, превод на ЕУ документи, и повеќе."
+      : "Project portfolio: subtitling for Disney, Netflix, NatGeo, EU document translation, and more.",
+    locale,
+    path: "/portfolio",
+  });
 }
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {

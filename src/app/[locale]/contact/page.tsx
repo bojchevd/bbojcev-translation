@@ -1,5 +1,5 @@
-import { setRequestLocale } from "next-intl/server";
-import { getTranslations } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { buildMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { QuoteForm } from "@/components/contact/QuoteForm";
 import { QuoteCalculator } from "@/components/contact/QuoteCalculator";
@@ -8,7 +8,14 @@ import { ContactInfo } from "@/components/contact/ContactInfo";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
-  return { title: t("pageTitle") };
+  return buildMetadata({
+    title: t("pageTitle"),
+    description: locale === "mk"
+      ? "Побарајте понуда за превод на документи. Калкулатор на цени, формулар за понуда, директен контакт."
+      : "Request a document translation quote. Price calculator, quote form, direct contact.",
+    locale,
+    path: "/contact",
+  });
 }
 
 export default async function ContactPage({
