@@ -32,7 +32,7 @@ export const PRICES = {
   standard: 400,
   complex: 500,
   expressSurcharge: 100,
-  perWord: 3,
+  perWordEur: 0.08,
 } as const;
 
 export function calculatePrice(
@@ -44,8 +44,8 @@ export function calculatePrice(
   const tier = doc?.tier ?? "standard";
 
   if (tier === "per-word") {
-    const unitPrice = PRICES.perWord;
-    const total = unitPrice * quantity;
+    const unitPrice = PRICES.perWordEur;
+    const total = Math.round(unitPrice * quantity * 100) / 100;
     return { total, unitPrice, tier };
   }
 

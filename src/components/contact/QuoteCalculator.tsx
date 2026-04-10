@@ -96,10 +96,10 @@ export function QuoteCalculator() {
           <div className="bg-linen rounded-lg p-5 mt-4">
             <p className="text-xs text-muted uppercase tracking-wider mb-1">{t("result")}</p>
             <p className="font-serif text-3xl text-brown">
-              {result.total.toLocaleString()} <span className="text-lg">MKD</span>
+              {isPerWord ? result.total.toFixed(2) : result.total.toLocaleString()} <span className="text-lg">{isPerWord ? "EUR" : "MKD"}</span>
             </p>
             <p className="text-sm text-muted mt-1">
-              {result.unitPrice} MKD {isPerWord ? t("perWord") : t("perPage")} × {quantity.toLocaleString()}
+              {isPerWord ? `€${result.unitPrice}` : `${result.unitPrice} MKD`} {isPerWord ? t("perWord") : t("perPage")} × {quantity.toLocaleString()}
             </p>
             <p className="text-xs text-muted mt-4 italic">{t("disclaimer")}</p>
             <div className="flex flex-wrap gap-3 mt-4">
