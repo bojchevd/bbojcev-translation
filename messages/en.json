@@ -27,5 +27,43 @@
   "footer": {
     "copyright": "© {year} Biljana Vasileva Bojcev. All rights reserved.",
     "location": "Veles, North Macedonia"
+  },
+  "home": {
+    "servicesTitle": "Services",
+    "servicesSubtitle": "Professional translation services tailored to your needs",
+    "clientsTitle": "Trusted By",
+    "clientsSubtitle": "Working with leading studios and institutions worldwide",
+    "testimonialsTitle": "Client Testimonials",
+    "ctaTitle": "Need a certified translation?",
+    "ctaSubtitle": "Get a free quote for your document translation project",
+    "ctaButton": "Request Quote"
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "pageSubtitle": "Comprehensive translation services for every need",
+    "court-translation": {
+      "title": "Court Translation",
+      "short": "Certified sworn translations for all official documents with full legal validity."
+    },
+    "legal-translation": {
+      "title": "Legal & Business Translation",
+      "short": "Contracts, regulations, court decisions, business plans, and financial documents."
+    },
+    "subtitling": {
+      "title": "Subtitling & Audiovisual",
+      "short": "Professional subtitling for film, series, documentaries, and interviews."
+    },
+    "literary-translation": {
+      "title": "Literary Translation",
+      "short": "Book translation across genres — health, science, history, and more."
+    },
+    "general-translation": {
+      "title": "General Translation",
+      "short": "Medical, academic, technical, IT, and personal document translation."
+    },
+    "mtpe": {
+      "title": "MT Post-Editing",
+      "short": "Professional review and editing of machine-translated content for publication quality."
+    }
   }
 }

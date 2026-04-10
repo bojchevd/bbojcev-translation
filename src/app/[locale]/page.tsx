@@ -1,4 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
+import { Hero } from "@/components/home/Hero";
+import { TrustBar } from "@/components/home/TrustBar";
+import { ServicesOverview } from "@/components/home/ServicesOverview";
+import { ClientLogos } from "@/components/home/ClientLogos";
+import { Testimonials } from "@/components/home/Testimonials";
+import { CtaBand } from "@/components/home/CtaBand";
 
 export default async function HomePage({
   params,
@@ -9,10 +15,13 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="font-serif text-4xl text-brown">
-        Biljana Vasileva Bojcev
-      </h1>
-    </main>
+    <>
+      <Hero />
+      <TrustBar />
+      <ServicesOverview />
+      <ClientLogos />
+      <Testimonials />
+      <CtaBand />
+    </>
   );
 }
