@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "title": "Biljana Vasileva Bojcev — Certified Court Translator",
+    "description": "Certified court translator with 30+ years of experience. Document translation, subtitling, legal translation. Veles, North Macedonia."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "requestQuote": "Request Quote"
+  },
+  "hero": {
+    "name": "Biljana Vasileva Bojcev",
+    "title": "Certified Court Translator",
+    "tagline": "Over 30 years of experience in document translation, subtitling, and localization",
+    "cta": "Request Quote",
+    "learnMore": "Learn More"
+  },
+  "trustBar": {
+    "years": "30+ Years Experience",
+    "languages": "5 Languages",
+    "certified": "Court Certified",
+    "projects": "1000+ Projects"
+  },
+  "footer": {
+    "copyright": "© {year} Biljana Vasileva Bojcev. All rights reserved.",
+    "location": "Veles, North Macedonia"
+  }
+}
