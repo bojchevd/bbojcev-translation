@@ -13,7 +13,7 @@ export function Bio() {
             <div className="relative">
               <div className="absolute inset-0 bg-terracotta/10 rounded-lg translate-x-3 translate-y-3" />
               <Image
-                src="/images/placeholder-portrait.svg"
+                src="/images/headshot-main.png"
                 alt="Biljana Vasileva Bojchev"
                 width={400}
                 height={500}

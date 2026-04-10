@@ -38,7 +38,7 @@ export function Hero() {
               <div className="absolute inset-0 bg-terracotta/10 rounded-lg translate-x-4 translate-y-4" />
               <div className="relative bg-linen rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/placeholder-portrait.svg"
+                  src="/images/headshot-main.png"
                   alt={t("name")}
                   width={400}
                   height={500}
