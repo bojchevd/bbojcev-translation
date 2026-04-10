@@ -14,27 +14,27 @@ export function buildMetadata({
   locale: string;
   path: string;
 }): Metadata {
-  const otherLocale = locale === "mk" ? "en" : "mk";
   const url = `${BASE_URL}/${locale}${path}`;
-  const altUrl = `${BASE_URL}/${otherLocale}${path}`;
   const fullTitle = `${title} | Biljana V. Bojchev`;
+
+  const languages: Record<string, string> = {};
+  for (const loc of ["mk", "en", "sr"]) {
+    languages[loc] = `${BASE_URL}/${loc}${path}`;
+  }
 
   return {
     title: fullTitle,
     description,
     alternates: {
       canonical: url,
-      languages: {
-        [locale]: url,
-        [otherLocale]: altUrl,
-      },
+      languages,
     },
     openGraph: {
       title: fullTitle,
       description,
       url,
       siteName: "Biljana V. Bojchev — Certified Court Translator",
-      locale: locale === "mk" ? "mk_MK" : "en_US",
+      locale: locale === "mk" ? "mk_MK" : locale === "sr" ? "sr_RS" : "en_US",
       type: "website",
     },
   };

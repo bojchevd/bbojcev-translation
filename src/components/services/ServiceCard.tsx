@@ -17,7 +17,7 @@ export function ServiceCard({ slug }: { slug: string }) {
         {t(`${slug}.short`)}
       </p>
       <span className="inline-block mt-4 text-terracotta text-sm font-medium group-hover:translate-x-1 transition-transform">
-        {locale === "mk" ? "Дознај повеќе →" : "Learn more →"}
+        {{ mk: "Дознај повеќе →", en: "Learn more →", sr: "Сазнајте више →" }[locale as "mk" | "en" | "sr"]}
       </span>
     </Link>
   );

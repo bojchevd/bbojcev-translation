@@ -68,7 +68,7 @@ export function ServicePageLayout({ slug }: { slug: string }) {
         <Container>
           <FaqSection
             items={t.raw(`${slug}.faq`) as { q: string; a: string }[]}
-            title={locale === "mk" ? "Најчесто поставувани прашања" : "Frequently Asked Questions"}
+            title={{ mk: "Најчесто поставувани прашања", en: "Frequently Asked Questions", sr: "Најчешћа питања" }[locale as "mk" | "en" | "sr"]!}
           />
         </Container>
       )}
@@ -78,14 +78,14 @@ export function ServicePageLayout({ slug }: { slug: string }) {
           {hasQuoteForm ? (
             <>
               <h2 className="font-serif text-2xl text-brown mb-4">
-                {locale === "mk" ? "Пресметајте ја цената" : "Calculate Your Price"}
+                {{ mk: "Пресметајте ја цената", en: "Calculate Your Price", sr: "Израчунајте цену" }[locale as "mk" | "en" | "sr"]}
               </h2>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button href={`/${locale}/contact`} variant="primary">
-                  {locale === "mk" ? "Побарај понуда" : "Request Quote"}
+                  {{ mk: "Побарај понуда", en: "Request Quote", sr: "Затражите понуду" }[locale as "mk" | "en" | "sr"]}
                 </Button>
                 <Button href={`/${locale}/contact#calculator`} variant="outline">
-                  {locale === "mk" ? "Калкулатор на цени" : "Price Calculator"}
+                  {{ mk: "Калкулатор на цени", en: "Price Calculator", sr: "Калкулатор цена" }[locale as "mk" | "en" | "sr"]}
                 </Button>
               </div>
             </>
@@ -93,7 +93,7 @@ export function ServicePageLayout({ slug }: { slug: string }) {
             <>
               <p className="text-muted mb-4">{t(`${slug}.contactNote`)}</p>
               <Button href={`/${locale}/contact`} variant="primary">
-                {locale === "mk" ? "Контактирајте не" : "Contact Us"}
+                {{ mk: "Контактирајте не", en: "Contact Us", sr: "Контактирајте нас" }[locale as "mk" | "en" | "sr"]}
               </Button>
             </>
           ) : null}

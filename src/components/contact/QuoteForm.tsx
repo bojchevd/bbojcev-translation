@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 export function QuoteForm() {
   const t = useTranslations("contact");
-  const locale = useLocale() as "mk" | "en";
+  const locale = useLocale() as "mk" | "en" | "sr";
 
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 

@@ -3,9 +3,9 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const languages = [
-  { en: "Macedonian", mk: "Македонски", enLevel: "Native", mkLevel: "Мајчин" },
-  { en: "English", mk: "Англиски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
-  { en: "Serbian", mk: "Српски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично" },
+  { en: "Macedonian", mk: "Македонски", sr: "Македонски", enLevel: "Native", mkLevel: "Мајчин", srLevel: "Матерњи" },
+  { en: "English", mk: "Англиски", sr: "Енглески", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично", srLevel: "C2 — Одлично" },
+  { en: "Serbian", mk: "Српски", sr: "Српски", enLevel: "C2 — Proficient", mkLevel: "C2 — Одлично", srLevel: "C2 — Одлично" },
 ];
 
 const catTools = [
@@ -15,14 +15,14 @@ const catTools = [
 ];
 
 const certifications = [
-  { en: "Authorized Court Translator — English ↔ Macedonian (Ministry of Justice, since 1996)", mk: "Овластен судски преведувач — Англиски ↔ Македонски (Министерство за правда, од 1996)" },
-  { en: "Authorized Court Translator — Serbian ↔ Macedonian (Ministry of Justice, since 2010)", mk: "Овластен судски преведувач — Српски ↔ Македонски (Министерство за правда, од 2010)" },
-  { en: "BA in English Language and Literature — Ss. Cyril and Methodius University, Skopje", mk: "Дипломиран англиски јазик и книжевност — УКИМ, Скопје" },
+  { en: "Authorized Court Translator — English ↔ Macedonian (Ministry of Justice, since 1996)", mk: "Овластен судски преведувач — Англиски ↔ Македонски (Министерство за правда, од 1996)", sr: "Овлашћени судски преводилац — Енглески ↔ Македонски (Министарство правде, од 1996)" },
+  { en: "Authorized Court Translator — Serbian ↔ Macedonian (Ministry of Justice, since 2010)", mk: "Овластен судски преведувач — Српски ↔ Македонски (Министерство за правда, од 2010)", sr: "Овлашћени судски преводилац — Српски ↔ Македонски (Министарство правде, од 2010)" },
+  { en: "BA in English Language and Literature — Ss. Cyril and Methodius University, Skopje", mk: "Дипломиран англиски јазик и книжевност — УКИМ, Скопје", sr: "Дипломирани англиста — УКИМ, Скопље" },
 ];
 
 export function Skills() {
   const t = useTranslations("about");
-  const locale = useLocale() as "mk" | "en";
+  const locale = useLocale() as "mk" | "en" | "sr";
 
   return (
     <section className="py-16 sm:py-24">
@@ -34,8 +34,8 @@ export function Skills() {
             <ul className="space-y-3">
               {languages.map((lang) => (
                 <li key={lang.en} className="flex justify-between items-center text-sm">
-                  <span className="text-brown font-medium">{locale === "mk" ? lang.mk : lang.en}</span>
-                  <span className="text-muted">{locale === "mk" ? lang.mkLevel : lang.enLevel}</span>
+                  <span className="text-brown font-medium">{lang[locale]}</span>
+                  <span className="text-muted">{{ mk: lang.mkLevel, en: lang.enLevel, sr: lang.srLevel }[locale]}</span>
                 </li>
               ))}
             </ul>

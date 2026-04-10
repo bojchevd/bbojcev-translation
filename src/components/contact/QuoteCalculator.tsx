@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 
 export function QuoteCalculator() {
   const t = useTranslations("calculator");
-  const locale = useLocale() as "mk" | "en";
+  const locale = useLocale() as "mk" | "en" | "sr";
 
   const [documentId, setDocumentId] = useState("");
   const [languagePair, setLanguagePair] = useState("");
@@ -108,9 +108,7 @@ export function QuoteCalculator() {
               </Button>
               <Button
                 href={`https://wa.me/${CONTACT.phoneRaw.replace("+", "")}?text=${encodeURIComponent(
-                  locale === "mk"
-                    ? "Здраво, ме интересира превод на документ."
-                    : "Hello, I'm interested in document translation."
+                  { mk: "Здраво, ме интересира превод на документ.", en: "Hello, I'm interested in document translation.", sr: "Здраво, интересује ме превод документа." }[locale]
                 )}`}
                 variant="outline"
               >

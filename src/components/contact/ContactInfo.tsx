@@ -35,7 +35,7 @@ export function ContactInfo() {
           </span>
           <div>
             <p className="text-sm font-medium">{CONTACT.phone}</p>
-            <p className="text-xs text-muted">{locale === "mk" ? "Телефон" : "Phone"}</p>
+            <p className="text-xs text-muted">{{ mk: "Телефон", en: "Phone", sr: "Телефон" }[locale as "mk" | "en" | "sr"]}</p>
           </div>
         </a>
 
@@ -74,7 +74,7 @@ export function ContactInfo() {
       <div className="mt-6 pt-6 border-t border-linen">
         <p className="text-sm text-brown font-medium">{CONTACT.address}</p>
         <p className="text-xs text-muted mt-1">
-          {locale === "mk" ? "Достапна за далечинска работа ширум светот" : "Available for remote work worldwide"}
+          {{ mk: "Достапна за далечинска работа ширум светот", en: "Available for remote work worldwide", sr: "Доступна за рад на даљину широм света" }[locale as "mk" | "en" | "sr"]}
         </p>
       </div>
     </div>

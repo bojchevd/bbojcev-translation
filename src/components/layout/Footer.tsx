@@ -24,7 +24,7 @@ export function Footer() {
           {/* Navigation */}
           <div>
             <p className="font-medium text-cream mb-3 text-sm tracking-wider uppercase">
-              {locale === "mk" ? "Навигација" : "Navigation"}
+              {{ mk: "Навигација", en: "Navigation", sr: "Навигација" }[locale as "mk" | "en" | "sr"]}
             </p>
             <ul className="space-y-2">
               {NAV_LINKS.map((link) => (
@@ -43,7 +43,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <p className="font-medium text-cream mb-3 text-sm tracking-wider uppercase">
-              {locale === "mk" ? "Контакт" : "Contact"}
+              {{ mk: "Контакт", en: "Contact", sr: "Контакт" }[locale as "mk" | "en" | "sr"]}
             </p>
             <ul className="space-y-2 text-sm">
               <li>

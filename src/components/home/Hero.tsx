@@ -52,7 +52,7 @@ export function Hero() {
                   {t("title")}
                 </p>
                 <p className="text-muted text-xs sm:text-sm mt-1">
-                  {locale === "mk" ? "од 1996 година" : "Since 1996"}
+                  {{ mk: "од 1996 година", en: "Since 1996", sr: "Од 1996. године" }[locale as "mk" | "en" | "sr"]}
                 </p>
               </div>
             </div>

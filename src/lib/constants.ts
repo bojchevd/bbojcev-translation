@@ -6,10 +6,10 @@ export const CONTACT = {
 } as const;
 
 export const LANGUAGE_PAIRS = [
-  { from: "en", to: "mk", label: { mk: "Англиски → Македонски", en: "English → Macedonian" } },
-  { from: "mk", to: "en", label: { mk: "Македонски → Англиски", en: "Macedonian → English" } },
-  { from: "sr", to: "mk", label: { mk: "Српски → Македонски", en: "Serbian → Macedonian" } },
-  { from: "mk", to: "sr", label: { mk: "Македонски → Српски", en: "Macedonian → Serbian" } },
+  { from: "en", to: "mk", label: { mk: "Англиски → Македонски", en: "English → Macedonian", sr: "Енглески → Македонски" } },
+  { from: "mk", to: "en", label: { mk: "Македонски → Англиски", en: "Macedonian → English", sr: "Македонски → Енглески" } },
+  { from: "sr", to: "mk", label: { mk: "Српски → Македонски", en: "Serbian → Macedonian", sr: "Српски → Македонски" } },
+  { from: "mk", to: "sr", label: { mk: "Македонски → Српски", en: "Macedonian → Serbian", sr: "Македонски → Српски" } },
 ] as const;
 
 export const NAV_LINKS = [

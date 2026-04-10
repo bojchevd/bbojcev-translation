@@ -6,26 +6,29 @@ const testimonials = [
   {
     mk: "Професионален и брз превод. Секогаш точна и прецизна.",
     en: "Professional and fast translation. Always accurate and precise.",
+    sr: "Професионалан и брз превод. Увек тачна и прецизна.",
     author: "M.S.",
-    role: { mk: "Правна фирма, Скопје", en: "Law firm, Skopje" },
+    role: { mk: "Правна фирма, Скопје", en: "Law firm, Skopje", sr: "Правна фирма, Скопље" },
   },
   {
     mk: "Одличен квалитет на титлување. Ја препорачувам без резерва.",
     en: "Excellent subtitling quality. I recommend her without reservation.",
+    sr: "Одличан квалитет титловања. Препоручујем је без резерве.",
     author: "D.K.",
-    role: { mk: "Продуцент, Белград", en: "Producer, Belgrade" },
+    role: { mk: "Продуцент, Белград", en: "Producer, Belgrade", sr: "Продуцент, Београд" },
   },
   {
     mk: "Соработуваме повеќе од 10 години. Секогаш навремена достава.",
     en: "We have been working together for over 10 years. Always on-time delivery.",
+    sr: "Сарађујемо више од 10 година. Увек на време.",
     author: "T.P.",
-    role: { mk: "Преведувачка агенција", en: "Translation agency" },
+    role: { mk: "Преведувачка агенција", en: "Translation agency", sr: "Преводилачка агенција" },
   },
 ];
 
 export function Testimonials() {
   const t = useTranslations("home");
-  const locale = useLocale() as "mk" | "en";
+  const locale = useLocale() as "mk" | "en" | "sr";
 
   return (
     <section className="py-16 sm:py-24">
